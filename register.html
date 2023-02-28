@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regstyle.css">
+    <title>Website Title</title>
+</head>
+<body scroll="no" style="overflow: hidden">
+    <div class="regcon">
+        <h1 id="reg">Register an Account</h1>
+        <div class="register">
+            <form action="connect.php" method="post">
+                <input type="text" id="firstname" name="firstname" size="50" value="" placeholder="First Name" required />
+                <br>
+                <br>
+                
+                <input type="text" id="middlename" name="middlename" size="50" value="" placeholder="Middle Name" required />
+                <br>
+                <br>
+                
+                <input type="text" id="lastname" name="lastname" size="50" value="" placeholder="Last Name" required />
+                <br>
+                <br>
+                
+                <input type="radio" id="male" name="gender" value="m" required><label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="f" required><label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="o" required><label for="other">Others</label>
+                <br>
+                <br>
+                
+                <input type="email" id="email" name="email" size="50" value="" placeholder="Active Email" required />
+                <br>
+                <br>
+                
+                <input type="password" id="password" name="password" size="50" maxlength="12" value="" placeholder="Password" required />
+                <br>
+                <br>
+                
+                <input type="text" id="address" name="address" size="50" maxlength="100" placeholder="Address" required>
+                <br>
+                <br>
+                
+                
+                
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday" required>
+                <br>
+                <br>
+                
+                
+                
+                
+                <!-- <label for="Country">Country:</label>
+                <select name='country'id="country" required>
+                    <option value='F'>Australia</option>
+                    <option value='P'>Brazil</option>
+                    <option value='M'>Costa Rica</option>
+                    <option value='T'>Philippines</option>
+                    <option value='E'>United States</option>
+                </select>
+                <br>
+                <br> -->
+                
+                <input type="submit" value="Submit" name="submit"/>
+                <!-- <input type="reset" value="reset" name="reset"> -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>
